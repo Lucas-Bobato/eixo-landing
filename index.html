@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eixo — sua técnica de balé numa foto</title>
+  <meta name="description" content="Tire uma foto e entenda sua curvatura do pé, seu plié e sua extensão de coluna. Entre na lista de espera do app do Eixo.">
+  <meta property="og:title" content="Eixo — sua técnica de balé numa foto">
+  <meta property="og:description" content="Medida, significado e o que praticar, direto no celular. Entre na lista de espera.">
+  <meta property="og:image" content="media/eixo-demo-capa.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#F7F4F0">
+  <link rel="preload" href="fonts/barlow-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topo">
+    <span class="marca">EIXO</span>
+    <a class="botao pequeno" href="#lista">Lista de espera</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-texto">
+        <p class="chapeu">App para bailarinos · em breve</p>
+        <h1>Entenda sua técnica de balé <em>numa foto</em>.</h1>
+        <p class="lead">Fotografe o exercício e o Eixo mostra a medida, explica o que ela significa e sugere o que praticar. Tudo no seu celular, entre uma aula e outra.</p>
+        <div class="hero-acoes">
+          <a class="botao" href="#lista">Quero entrar na lista</a>
+          <a class="link-video" href="#video">Ver o protótipo funcionando ↓</a>
+        </div>
+      </div>
+      <figure class="hero-video" id="video">
+        <video src="media/eixo-demo.mp4" poster="media/eixo-demo-capa.jpg" controls playsinline muted autoplay loop preload="metadata"
+          aria-label="Demonstração do protótipo do Eixo analisando fotos de pé em ponta, plié e extensão de coluna"></video>
+        <figcaption>Gravação do protótipo real, sem edição nos resultados.</figcaption>
+      </figure>
+    </section>
+
+    <section class="passos" aria-labelledby="como">
+      <h2 id="como">Como funciona</h2>
+      <ol>
+        <li><span>01</span><h3>Escolha o exercício</h3><p>Cada análise mostra como fotografar, com um exemplo de enquadramento.</p></li>
+        <li><span>02</span><h3>Tire a foto</h3><p>A análise acontece no próprio aparelho, em segundos. A foto não é enviada a nenhum servidor.</p></li>
+        <li><span>03</span><h3>Entenda e pratique</h3><p>Você vê a medida e a faixa, entende o que ela quer dizer e recebe exercícios para praticar.</p></li>
+      </ol>
+    </section>
+
+    <section class="analises" aria-labelledby="analisa">
+      <h2 id="analisa">O que o protótipo já analisa</h2>
+      <div class="cartoes">
+        <article><img src="img/foto.jpg" alt="Pé em ponta visto de lado, perna apoiada no chão" loading="lazy"><h3>Curvatura do pé</h3><p>O arco do peito do pé em ponta, numa foto lateral.</p></article>
+        <article><img src="img/plie.jpg" alt="Pessoa de lado, com a mão na parede, em posição de plié" loading="lazy" style="object-position:center 30%"><h3>Plié</h3><p>A profundidade da descida e o alinhamento do joelho com o pé.</p></article>
+        <article><img src="img/coluna.jpg" alt="Pessoa deitada de bruços subindo o tronco com as mãos no chão" loading="lazy"><h3>Extensão de coluna</h3><p>Quanto o tronco sobe, com o quadril apoiado no chão.</p></article>
+      </div>
+    </section>
+
+    <section class="breve" aria-labelledby="vem">
+      <div>
+        <p class="chapeu">Em desenvolvimento</p>
+        <h2 id="vem">O que vem no app</h2>
+        <p class="muted">Estamos construindo estas funções. A sua inscrição nos ajuda a decidir o que fazer primeiro.</p>
+      </div>
+      <ul>
+        <li><h3>Revisão de um professor</h3><p>Peça a um professor aprovado pelo Eixo que confira sua foto e escreva um parecer.</p></li>
+        <li><h3>Plano de prática</h3><p>Exercícios para fazer sozinho, a partir das suas medidas.</p></li>
+        <li><h3>Sua evolução</h3><p>Histórico salvo na sua conta, para comparar foto a foto ao longo dos meses.</p></li>
+        <li><h3>Compartilhar conquistas</h3><p>Um cartão com a sua evolução para os stories, sem mostrar a sua foto.</p></li>
+      </ul>
+    </section>
+
+    <section class="lista" id="lista" aria-labelledby="titulo-lista">
+      <div class="lista-intro">
+        <h2 id="titulo-lista">Entre na <em>lista de espera</em></h2>
+        <p>Quem se inscrever recebe o convite para testar o app primeiro. Leva menos de um minuto.</p>
+        <p class="muted pequeno">Tem menos de 18 anos? Peça ao seu responsável para fazer a inscrição.</p>
+      </div>
+
+      <form id="form" novalidate>
+        <label class="campo">
+          <span>E-mail <b aria-hidden="true">*</b></span>
+          <input type="email" name="email" autocomplete="email" required maxlength="254" placeholder="voce@email.com">
+        </label>
+
+        <fieldset class="campo">
+          <legend>Quem está se inscrevendo? <b aria-hidden="true">*</b></legend>
+          <div class="opcoes">
+            <label><input type="radio" name="perfil" value="bailarino" required> Sou bailarino(a), 18 anos ou mais</label>
+            <label><input type="radio" name="perfil" value="responsavel"> Sou responsável por um(a) bailarino(a) menor</label>
+            <label><input type="radio" name="perfil" value="professor"> Sou professor(a) de dança</label>
+          </div>
+        </fieldset>
+
+        <div class="duas">
+          <label class="campo">
+            <span>Nível <b aria-hidden="true">*</b></span>
+            <select name="nivel" required>
+              <option value="">Escolha</option>
+              <option value="iniciante">Iniciante</option>
+              <option value="formacao">Em formação (escola ou curso técnico)</option>
+              <option value="amador_adulto">Amador(a) adulto(a)</option>
+              <option value="pre_profissional">Pré-profissional</option>
+              <option value="profissional">Profissional</option>
+            </select>
+          </label>
+          <label class="campo">
+            <span>Tempo de prática <b aria-hidden="true">*</b></span>
+            <select name="tempo_pratica" required>
+              <option value="">Escolha</option>
+              <option value="menos_1">Menos de 1 ano</option>
+              <option value="1_3">1 a 3 anos</option>
+              <option value="3_6">3 a 6 anos</option>
+              <option value="6_10">6 a 10 anos</option>
+              <option value="mais_10">Mais de 10 anos</option>
+            </select>
+          </label>
+        </div>
+
+        <fieldset class="campo">
+          <legend>Se o app estivesse pronto hoje, como você usaria? <b aria-hidden="true">*</b></legend>
+          <div class="opcoes">
+            <label><input type="radio" name="uso_pago" value="gratis" required> Só a versão grátis</label>
+            <label><input type="radio" name="uso_pago" value="revisao_avulsa"> <span>Pagaria uma revisão de professor quando precisasse (<strong>R$&nbsp;19,90</strong>)</span></label>
+            <label><input type="radio" name="uso_pago" value="assinatura"> <span>Assinaria por <strong>R$&nbsp;49,90/mês</strong>: plano de prática, evolução detalhada e 2 revisões por mês</span></label>
+            <label><input type="radio" name="uso_pago" value="nao_sei"> Ainda não sei</label>
+          </div>
+        </fieldset>
+
+        <div class="duas">
+          <label class="campo">
+            <span>Cidade</span>
+            <input type="text" name="cidade" autocomplete="address-level2" maxlength="80">
+          </label>
+          <label class="campo">
+            <span>Estado</span>
+            <select name="uf" autocomplete="address-level1">
+              <option value="">—</option>
+              <option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option>
+              <option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option>
+              <option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option>
+              <option>RO</option><option>RR</option><option>SC</option><option>SP</option><option>SE</option><option>TO</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="campo">
+          <span>WhatsApp <i>(opcional, para convidar para testes)</i></span>
+          <input type="tel" name="whatsapp" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="(11) 91234-5678">
+        </label>
+
+        <label class="armadilha" aria-hidden="true">Não preencha<input type="text" name="site" tabindex="-1" autocomplete="off"></label>
+
+        <label class="consentimento">
+          <input type="checkbox" name="consentimento" required>
+          <span>Concordo que o Eixo guarde estes dados só para me avisar do lançamento e me convidar para testes. Posso pedir para apagar a qualquer momento.</span>
+        </label>
+
+        <p class="erro" id="erro" role="alert" hidden></p>
+        <button class="botao largo" type="submit" id="enviar">Entrar na lista de espera</button>
+      </form>
+
+      <div class="sucesso" id="sucesso" hidden tabindex="-1">
+        <h3>Pronto, você está na lista!</h3>
+        <p>Vamos avisar por e-mail quando o app estiver pronto para testar. Obrigado por ajudar a construir o Eixo.</p>
+      </div>
+    </section>
+
+    <section class="perguntas" aria-labelledby="duvidas">
+      <h2 id="duvidas">Dúvidas</h2>
+      <details><summary>O Eixo substitui o professor?</summary><p>Não. O app complementa a aula: mede o que aparece na foto e explica o resultado. Correções e decisões sobre o treino continuam com o seu professor.</p></details>
+      <details><summary>É um diagnóstico?</summary><p>Não. É uma medição geométrica experimental feita a partir da foto. Não avalia talento, força, dor ou risco de lesão.</p></details>
+      <details><summary>Minhas fotos ficam guardadas?</summary><p>No protótipo, a análise acontece no seu aparelho e a foto não é enviada. No app, você vai decidir o que guardar na sua conta e poderá apagar tudo.</p></details>
+      <details><summary>Quanto vai custar?</summary><p>A ideia é que as análises tenham uma opção gratuita. O preço das funções pagas, como a revisão por professor, ainda está em definição; por isso fazemos a pergunta no formulário.</p></details>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <span class="marca">EIXO</span>
+    <p>Medição geométrica experimental. Não é diagnóstico nem avaliação de talento.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
