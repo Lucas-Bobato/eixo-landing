@@ -181,6 +181,7 @@
 
   <script src="config.js"></script>
   <script src="app.js"></script>
-  <script defer src="/_vercel/insights/script.js"></script>
+  <!-- Web Analytics da Vercel: só existe quando a página está hospedada lá (no GitHub Pages daria 404) -->
+  <script>if (!location.hostname.endsWith('github.io')) { const s = document.createElement('script'); s.defer = true; s.src = '/_vercel/insights/script.js'; document.head.append(s); }</script>
 </body>
 </html>
